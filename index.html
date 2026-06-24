@@ -340,7 +340,7 @@
         <div class="header-credits">
             <div>地图：@展十（超自然行动组）</div>
             <div>封面：小红书@風.</div>
-            <div>网页：@灵星连</div>
+            <div>封面优化+网页：@灵星连</div>
         </div>
     </div>
     <div class="cover-grid" id="coverGrid"></div>
@@ -408,7 +408,7 @@
                 <div class="cover-image-wrapper">
                     <img src="${imgPath}" alt="${folder.name}" ${isShiftDown ? 'class="shift-down"' : ''} onerror="this.style.display='none'">
                 </div>
-                <div class="cover-name">${folder.name}</div>
+                <div class="cover-name">${folder.name}${folder.maps.length > 1 ? `<span style="font-size:0.75rem;color:var(--text-secondary);margin-left:4px">(${folder.maps.length}个)</span>` : ''}</div>
             `;
 
             grid.appendChild(card);
