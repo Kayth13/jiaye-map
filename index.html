@@ -383,15 +383,15 @@
 
 <script>
     const folders = [
-        { name: '上1字', maps: ['地图 (1).jpg', '地图 (2).jpg'] },
+        { name: '上1字', maps: ['地图 (1).jpg', '地图 (2).jpg'], labels: ['地图1', '地图2-建议跟跑'] },
         { name: '下1字', maps: ['地图.jpg'] },
-        { name: '右一字', maps: ['地图.jpg'] },
-        { name: '左一字', maps: ['地图 (1).jpg', '地图 (2).jpg', '地图 (3).jpg', '地图 (4).jpg'] },
+        { name: '右一字', maps: ['地图 (1).jpg', '地图 (2).jpg'] },
+        { name: '左一字', maps: ['地图 (1).jpg', '地图 (2).jpg', '地图 (3).jpg', '地图 (4).jpg', '地图 (5).jpg'] },
         { name: '上T门', maps: ['地图.jpg'] },
         { name: '下T门', maps: ['地图.jpg'] },
         { name: 'Y字型', maps: ['地图.jpg'] },
         { name: '三口门', maps: ['地图.jpg'] },
-        { name: '上拐角门', maps: ['地图.jpg'] },
+        { name: '上拐角门', maps: ['地图 (1).jpg', '地图 (2).jpg'] },
         { name: '下拐角门', maps: ['地图.jpg'] },
         { name: '中拐角门', maps: ['地图.jpg'] },
         { name: '右拐角门', maps: ['地图.jpg'] }
@@ -453,7 +453,7 @@
                     <img src="${mapPath}" alt="地图 ${index + 1}" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 60%22%3E%3Crect fill=%22%232a2a2a%22 width=%22100%22 height=%2260%22/%3E%3Ctext x=%2250%22 y=%2235%22 text-anchor=%22middle%22 fill=%22%239a9590%22 font-size=%2212%22%3E图片加载失败%3C/text%3E%3C/svg%3E'">
                 </div>
                 <div class="map-label">
-                    <span>地图 ${index + 1}</span>
+                    <span>${folder.labels && folder.labels[index] ? folder.labels[index] : '地图 ' + (index + 1)}</span>
                     <span class="expand-icon">⊕</span>
                 </div>
             `;
