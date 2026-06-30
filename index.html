@@ -39,6 +39,7 @@
             min-height: 100vh;
             padding: 20px;
             animation: fadeIn 0.3s ease;
+            position: relative;
         }
 
         .page.active {
@@ -112,6 +113,14 @@
             max-width: 640px;
             margin: 0 auto;
             padding: 60px 0 10px;
+        }
+
+        .footer-credits {
+            text-align: right;
+            font-size: 0.65rem;
+            color: var(--text-secondary);
+            margin-top: 30px;
+            padding-right: 20px;
         }
 
         .cover-card {
@@ -352,6 +361,7 @@
         </div>
     </div>
     <div class="cover-grid" id="coverGrid"></div>
+    <div class="footer-credits">更新日期：26/6/28</div>
 </div>
 
 <div id="detailPage" class="page">
@@ -389,9 +399,9 @@
         { name: '左一字', maps: ['地图 (1).jpg', '地图 (2).jpg', '地图 (3).jpg', '地图 (4).jpg', '地图 (5).jpg'] },
         { name: '上T门', maps: ['地图.jpg'] },
         { name: '下T门', maps: ['地图.jpg'] },
-        { name: 'Y字型', maps: ['地图.jpg'] },
+        { name: 'Y字型-建议跟跑', maps: ['地图.jpg'] },
         { name: '三口门', maps: ['地图.jpg'] },
-        { name: '上拐角门', maps: ['地图 (1).jpg', '地图 (2).jpg'] },
+        { name: '上拐角门', maps: ['地图 (1).jpg', '地图 (2).jpg'], labels: ['地图1-不好跑', '地图2-建议跟跑'] },
         { name: '下拐角门', maps: ['地图.jpg'] },
         { name: '中拐角门', maps: ['地图.jpg'] },
         { name: '右拐角门', maps: ['地图.jpg'] }
